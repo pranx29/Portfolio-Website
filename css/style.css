@@ -1,0 +1,516 @@
+html, body{
+  margin: 0;
+  font-family: "Open Sans", sans-serif;
+  background-color: #36383c;
+}
+
+header {
+  position: sticky;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+  padding: 30px 120px;
+  background-color: #36383c;
+  z-index: 1000;
+}
+
+.logo img{
+  width: 50px;
+  height: 50px;
+}
+
+.nav-bar {
+  flex-grow: 1;
+  text-align: center;
+}
+
+.nav-bar ul {
+  display: flex;
+  list-style: none;
+  justify-content: center;
+  gap: 20px;
+}
+
+.nav-bar ul li a {
+  text-decoration: none;
+  color: #717171;
+  font-size: 1.2em;
+  font-weight: 400;
+}
+
+.nav-bar ul li a:hover {
+  color: #ffffff;
+}
+
+.home{
+  display: grid;
+  grid-template-columns: 50% 50%;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
+.home-content {
+  color: #ffffff;
+  padding: 200px 150px;
+}
+.home-content span {
+  display: inline-block;
+  font-size: 2em;
+  font-weight: 300;
+  margin-right: 10px;
+}
+
+.home-content .name{
+  font-size: 3em;
+  font-weight: 700;
+  font-family: "Merriweather", serif;
+  color: #ffc466;
+}
+
+.home-content p {
+  font-size: 1.5em;
+  color: white;
+  margin: 5px 0px;
+  max-width: 350px;
+  line-height: 1.5;
+}
+
+.home-content a {
+  display: inline-block;
+  text-decoration: none;
+  color: #ffc466;
+  margin-top: 20px;
+  padding: 10px 20px;
+  border: 3px solid #ffc466;
+  border-radius: 5px;
+}
+
+.home-content a:hover {
+  background-color: #ffc466;
+  color: #36383c;
+}
+
+.home-image img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+.social-icons-bar{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  position: absolute;
+  bottom: 5vh;
+  right: 8vw;
+}
+
+.social-icons-bar .separator {
+  height: 100px;
+  width: 2px;
+  background-color: #ffc466;
+}
+
+.social-icons-bar .social-icons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.social-icons .social-icon {
+  color: #ffffff;
+  font-size: 1.5em;
+}
+
+.social-icons .social-icon:hover {
+  color: #ffc466;
+}
+
+#about {
+  background-color: #34363d;
+  margin-top: 5px;
+  padding: 120px 100px;
+  padding-bottom: 75px;
+  display: flex;
+  flex-direction: column;
+  gap: 75px;
+  color: #ffffff;
+
+}
+
+#about h1{
+  margin: 0px;
+  font-size: 2.5em;
+  font-weight: 700;
+  font-family: "Merriweather", serif;
+}
+.about-container{
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.about-container .separator {
+  height: 1px;
+  width: 40px;
+  background-color: #ffc466;
+  margin: 20px 0px;
+}
+
+.about-container p {
+  font-size: 1.5em;
+  margin: 5px;
+  width: 95%; ;
+}
+
+.about-container p span{
+  color: #ffc466;
+}
+
+.skills-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.skills-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.skills-container .skill {
+  background-color: #404144;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  width: 120px;
+  height: 120px;
+}
+.skills-container .skill:hover {
+  background-color: #ffc466;
+}
+
+.skill .image-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.skill p {
+  font-size: 1em;
+}
+
+.skill img {
+  font-size: 1em;
+  margin: 10px;
+}
+
+#portfolio-section {
+  background-color: #34363d;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 25px;
+  color: #ffffff;
+  padding: 120px 100px;
+}
+
+#portfolio-section h1 {
+  margin: 0px;
+  font-size: 2.5em;
+  font-weight: 700;
+  font-family: "Merriweather", serif;
+}
+
+.portfolio-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.portfolio-container .portfolio img {
+  width: 200px;
+  height: 200px;
+}
+
+#portfolio-section .btn {
+  text-decoration: none;
+  color: #34363d;
+  background-color: #ffc466;
+  padding: 10px 20px;
+  border-radius: 5px;
+}
+#experience-section {
+  color: #ffffff;
+  background-color: #404245;
+  padding: 50px 100px;
+}
+#experience-section h1 {
+  margin-top: -75px;
+  font-size: 2.5em;
+  font-weight: 700;
+  font-family: "Merriweather", serif;
+}
+
+.experience {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+  margin-top: 20px;
+}
+
+.timeline-container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px
+}
+
+.timeline {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 25px;
+  align-items: center;
+}
+
+.timeline .time-period {
+  position: relative;
+  font-size: 1em;
+  font-weight: 400;
+  background-color: #5f5f61;
+  padding: 5px 10px;
+  padding-right: 5px;
+}
+
+.timeline .time-period::after {
+  content: '';
+  position: absolute;
+  top: 50%; 
+  right: -28px; 
+  transform: translateY(-50%);
+  border: 14px solid transparent;
+  border-left-color: #5f5f61;
+}
+.timeline .circle {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: #ffc466;
+  box-shadow: 0 0 25px rgb(185, 110, 40);
+}
+
+.timeline-container .separator {
+  flex-grow: 1;
+  height: auto;
+  width: 2px;
+  background-color: #ffffff;
+  align-self: end;
+  margin-right: 9px;
+}
+
+.experience-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.experience-content h2 {
+  margin: 0px;
+  font-size: 1.5em;
+  font-weight: 500;
+}
+
+.experience-content h3 {
+  font-size: 1.2em;
+  margin: 5px 0px;
+  font-weight: 300;
+}
+
+.experience-content p {
+  font-size: 1em;
+  font-weight: 200;
+}
+
+#testimonial-section {
+  background-color: #34363d;
+  display: flex;
+  color: #ffffff;
+}
+
+#testimonial-section h1 {
+  font-size: 2.5em;
+  font-weight: 700;
+  font-family: "Merriweather", serif;
+}
+
+.testimonial-content {
+  padding: 100px;
+}
+
+.testimonial-content .content-container {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.content-container .separator{
+  height: 1px;
+  width: 120px;
+  background-color: #ffc466;
+  margin: 20px 0px;
+}
+
+.content-container p {
+  font-size: 1.2em;
+  font-weight: 300;
+  margin: 5px;
+}
+
+.testimonial-author {
+  display: flex;
+  flex-direction: column;
+  padding-left: 30px;
+}
+
+.testimonial-author h3 {
+  font-family: "Merriweather", serif;
+  font-size: 1.5em;
+  margin: 0px;
+}
+
+.testimonial-author .company-container {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  padding-top: 10px;
+}
+
+.company-container .separator {
+  height: 1px;
+  width: 10px;
+  background-color: #ffc466;
+}
+
+.company-container p {
+  margin: 0px
+}
+
+
+#testimonial-section .testimonial-image {
+  padding: 25px 0px;
+}
+
+.testimonial-image img {
+  width: 100%;
+  height: 90%;
+}
+
+#contact-section {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+  background-color: #404245;
+  padding-bottom: 75px;
+}
+
+#contact-section .heading-container {
+  display: flex;
+  gap: 20px;
+  width: 100%;
+}
+
+.heading-container .separator {
+  flex-grow: 1;
+  height: 1px;
+  background-color: #ffc466;
+}
+
+.heading-container  h1 {
+  font-size: 2.5em;
+  font-weight: 700;
+  font-family: "Merriweather", serif;
+  color: #ffffff;
+  margin: 0px;
+  margin-top: -25px;
+}
+
+#contact-section .contact-content {
+  display: flex;
+  flex-direction: column;
+  
+}
+
+.contact-content .contact-container {
+  display: flex;
+  gap: 20px;
+  margin-top: 20px;
+  justify-content: space-around;
+}
+
+.contact-container p {
+  font-size: 1em;
+  font-weight: 400;
+  color: #ffc466;
+  margin: 0px;
+}
+
+.contact-container i {
+  font-size: 1.2em;
+  color: #ffffff;
+}
+
+.contact-container .icon-desc-container {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 10px 20px;
+  background-color: #34363d;
+  width: 200px;
+  border-radius: 5px;
+}
+
+.social-container {
+  display: flex;
+  gap: 20px;;
+  width: 100%;
+}
+
+.social-container .separator {
+  height: 1px;
+  flex-grow: 1;
+  background-color: #ffc466;
+
+}
+
+.social-container .contact-social-icons-bar{
+  display: flex;
+  margin-top: -15px;
+}
+
+.contact-social-icons-bar .social-icons {
+  display: flex;
+  gap: 20px;
+}
+
+footer {
+  padding: 80px;
+  padding-top: 30px;
+  display: flex;
+  justify-content: space-around;
+  font-size: 1.8em;
+  font-family: "Merriweather", serif;
+  color: #ffc466;
+}
+
+
+

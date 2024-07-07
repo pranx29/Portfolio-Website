@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Portfolio Website</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <img src="images/logo.png" alt="logo" />
+      </div>
+      <nav class="nav-bar">
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#portfolio-section">Portfolio</a></li>
+          <li><a href="#contact-section">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="section-container">
+      <section class="home">
+        <div class="home-content">
+          <span>I'M</span>
+          <span class="name">Ivan Dan</span>
+          <p>Python Developer & ERPNext Consultant</p>
+          <a href="contact.html" class="btn">Contact Me</a>
+        </div>
+
+        <div class="home-image">
+          <img src="images/home-image.png" alt="home-image" />
+        </div>
+
+        <div class="social-icons-bar">
+          <div class="separator"></div>
+          <div class="social-icons">
+            <a href="https://facebook.com" target="_blank" class="social-icon">
+              <i class="fab fa-facebook-f"></i>
+            </a>
+            <a href="https://twitter.com" target="_blank" class="social-icon">
+              <i class="fab fa-twitter"></i>
+            </a>
+            <a href="https://linkedin.com" target="_blank" class="social-icon">
+              <i class="fab fa-linkedin-in"></i>
+            </a>
+            <a href="https://whatsapp.com" target="_blank" class="social-icon">
+              <i class="fab fa-whatsapp"></i>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <section id="about">
+        <div class="about-section">
+          <h1>About</h1>
+          <div class="about-container">
+            <div class="separator"></div>
+            <p>
+              I have acquired and sharpened m ipsum dolor sit amet, consectetur
+              adipiscing elit. Etiam eu turpis molestie, dictum est a, mattis
+              tellus. Sed dignissim, metus nec fringilla accumsan, risus sem
+              sollicitudin lacus, ut interdum tellus elit sed risus. Maecenas
+              eget condimentum vn organization. I am
+              <span>trustworthy, creative, and an effective communicator.</span>
+              I fondly anticipate working in a challenging yet rewarding
+              organization to attain its visions for personal growth.
+            </p>
+          </div>
+        </div>
+
+        <div class="skills-section">
+          <h1>My Skills</h1>
+          <div class="skills-container">
+            <div class="skill">
+              <img
+                width="48"
+                height="48"
+                src="https://img.icons8.com/color/48/python--v1.png"
+                alt="python--v1"
+              />
+              <p>Python</p>
+            </div>
+            <div class="skill">
+              <img
+                width="48"
+                height="48"
+                src="https://img.icons8.com/color/48/flutter.png"
+                alt="flutter"
+              />
+              <p>Flutter</p>
+            </div>
+            <div class="skill">
+              <img
+                width="48"
+                height="48"
+                src="https://img.icons8.com/color/48/ubuntu--v1.png"
+                alt="ubuntu"
+              />
+              <p>Ubuntu</p>
+            </div>
+            <div class="skill">
+              <img
+                width="48"
+                height="48"
+                src="https://img.icons8.com/color/48/git.png"
+                alt="git"
+              />
+              <p>Git Source Control</p>
+            </div>
+            <div class="skill">
+              <img
+                width="48"
+                height="48"
+                src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAJQAAACUCAMAAABC4vDmAAAAaVBMVEV1dP////9ubf/BwP9wb/+2tv9ycf/Fxf+0tP/09P+Liv/m5v+cm//U1P9nZv/y8v9rav+hoP+Ih/+Eg//Z2f/e3v96ef+rqv9iYf99fP+wr//t7P+ko/+7u/+Pjv+op/+Wlf/6+v/Ozf/jEr2EAAACkElEQVR4nO2ci5KiMBBFA8Qg60qCAXn53P//yIW1nAHHGZtQTdqtPj/AqSZKOtW5Ihigiyjb7cXC7HdZVOihhxgoNVYaqZZ2EkJ1j7VN8kRKl1XoQehDLKxK/SiV16E/oxthnY+lVqnHKt1R6WootTK+hW6Y1acUFae7VS+Vp75dPknzm5SuCaynO6rW/6TO3n93Q8Kyl9KVb48xle6kGlKF6krVBEJbQiuqR1ktCmKFEkIWIiLzH3XHRCKTviUekZnYEVtS3aLaicX3dK8hqMQwDMMwzJsiw8lgbyONOKxXE1lnCrUPME0bONCeERsBGbko9eB14X1H7UhbY0mZ5PXTv+OC1J/Ii7tTUCL9BMM1RSnnZd5xoCh1QlpTc6RyrD58hlSCdt40lromUPTmuEc7sBhLRfYXEKsM3iHKWGptFBQ0o69SNE4AWQoKS0FhKSgsBYWloLAUFJaCwlJQWArKg1TqdW/+XCq+/P6Zi11Ca2ozmmwt/iue3iEnWCcIc6SCLXqpXM4S0IceXKTQR7P+GymKC71An+5xkMroVUof8MegxlKb7Qvig11gCmos1VTpzywzsP0OWxeW+haWgsJSUFgKCktBYSkoLAWFpaCwFBSWgvIGUk0qoYSLDUvoDZz4hNYqz5kKighOBRGdNGuRroDOkrpiVeo4QyrAcRIymyOFtdLl1d0pwbpWbGa8vz94d53z109/zhXvGqGSsdv4cHvCPGk0tjnGE4mOmcA9/VQyBH+IPz7I5K6lMgzDMAzzrhBMTNjTjLsgGQxCMkKloFepgmYsD8kAoyChGPUUlKRKdQvFohYf1tINWqMZSUfHahjeRzPmkGYgJIXozPOX6MzAe8joIPt0IEUnjvUvDi4vhWzjoroAAAAASUVORK5CYII="
+                alt="erp-next"
+              />
+              <p>ERPNext</p>
+            </div>
+            <div class="skill">
+              <img
+                width="48"
+                height="48"
+                src="https://img.icons8.com/color/48/mongodb.png"
+                alt="mongodb"
+              />
+              <p>MongoDB</p>
+            </div>
+            <div class="skill">
+              <div class="image-container">
+                <img
+                  width="48"
+                  height="48"
+                  src="https://img.icons8.com/color/48/html-5--v1.png"
+                  alt="html-5--v1"
+                />
+                <img
+                  width="48"
+                  height="48"
+                  src="https://img.icons8.com/color/48/css3.png"
+                  alt="css3"
+                />
+              </div>
+              <p>Html & CSS</p>
+            </div>
+            <div class="skill">
+              <img
+                width="48"
+                height="48"
+                src="https://img.icons8.com/color/48/javascript--v1.png"
+                alt="javascript--v1"
+              />
+              <p>Javascript</p>
+            </div>
+            <div class="skill">
+              <img
+                width="78"
+                height="48"
+                src="https://octavision.in/files/downloade2746b.png"
+                alt="frappe"
+              />
+              <p>Frappe</p>
+            </div>
+            <div class="skill">
+              <img
+                width="48"
+                height="48"
+                src="https://img.icons8.com/color/48/net-framework.png"
+                alt="net-framework"
+              />
+              <p>.Net</p>
+            </div>
+            <div class="skill">
+              <img
+                width="48"
+                height="48"
+                src="https://img.icons8.com/color/48/000000/flask.png"
+                alt="flask"
+              />
+              <p>Flask</p>
+            </div>
+            <div class="skill">
+              <img
+                width="48"
+                height="48"
+                src="https://img.icons8.com/color/48/mysql.png"
+                alt="mysql"
+              />
+              <p>MySQL</p>
+            </div>
+            <div class="skill">
+              <img
+                width="48"
+                height="48"
+                src="https://img.icons8.com/color/48/amazon-web-services.png"
+                alt="amazon-web-services"
+              />
+              <p>AWS Server</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="portfolio-section">
+        <div>
+          <h1>Portfolio</h1>
+        </div>
+        <div class="portfolio-container">
+          <div class="portfolio">
+            <img src="images/portfolio-1.jpeg" alt="portfolio-1" />
+          </div>
+          <div class="portfolio">
+            <img src="images/portfolio-2.jpeg" alt="portfolio-1" />
+          </div>
+          <div class="portfolio">
+            <img src="images/portfolio-3.jpeg" alt="portfolio-1" />
+          </div>
+          <div class="portfolio">
+            <img src="images/portfolio-4.jpeg" alt="portfolio-1" />
+          </div>
+          <div class="portfolio">
+            <img src="images/portfolio-5.jpeg" alt="portfolio-1" />
+          </div>
+          <div class="portfolio">
+            <img src="images/portfolio-6.jpeg" alt="portfolio-1" />
+          </div>
+        </div>
+
+        <a href="portfolio.html" class="btn">View More</a>
+
+      </section>
+
+      <section id="experience-section">
+        <h1>Experience</h1>
+        <div class="experience-container">
+          <div class="experience">
+            <div class="timeline-container">
+              <div class="timeline">
+                <div class="time-period">2021<i class="right-arrow"></i></div>
+                <div class="circle"></div>
+              </div>
+              <div class="separator"></div>
+            </div>
+            <div class="experience-content">
+              <h2>Senior Python Developer</h2>
+              <h3>Scotteh, Toledo</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie, dictum est 
+                a, mattis tellus. Sed dignissim, metus nec fringilla accumsan, risus sem sollicitudin lacus, ut 
+                interdum tellus elit sed risus. Maecenas eget condimentum velit, sit amet feugiat lectus. Class 
+                aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Praesent auctor 
+                purus luctus enim egestas, ac scelerisque ante pulvinar. Donec ut rhoncus ex. Suspendisse ac rhoncus nist, 
+                eu tempor urna. Curabitur vel bibendum lorem. Morbi convallis convallis diam sit amet lacinia. Aliquam in 
+                elementum tellus.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie, dictum 
+                est a, mattis tellus. Sed dignissim, metus nec fringilla accumsan, risus sem sollicitudin lacus, ut interdum 
+                tellus elit sed risus. Maecenas eget condimentum velit.
+                sit amet feugiat lectus.</p>
+            </div>
+          </div>
+          <div class="experience">
+            <div class="timeline-container">
+              <div class="timeline">
+                <div class="time-period">2021</div>
+                <div class="circle"></div>
+              </div>
+              <div class="separator"></div>
+            </div>
+            <div class="experience-content">
+              <h2>Python Developer</h2>
+              <h3>AutoGrid Systems, Naperville</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie, 
+                dictum est a, mattis tellus. Sed dignissim, metus nec fringilla accumsan, risus sem 
+                sollicitudin lacus, ut interdum tellus elit sed risus. Maecenas eget condimentum velit, 
+                sit amet feugiat lectus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, 
+                per inceptos or urna. Curabitur vel bibe</p>
+            </div>
+          </div>
+        </div>
+         
+      </section>
+
+      <section id="testimonial-section">
+        <div class="testimonial-content"> 
+          <h1>Testimonial</h1>
+          <div class="content-container">
+            <div class="separator"></div>
+            <p><span>The design quality,</span> flexibility, documentation and support are all absolutely <span>excellent</span>. 
+              I buy the Avada theme for all my clients, knowing that whatever they require, Avada will 
+              be able to deliver.</p>
+          </div>
+          <div class="testimonial-author">
+              <h3>Josef Sharon</h3>
+              <div class="company-container">
+                <div class="separator"></div>
+                <p>CEO, Company</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial-image">
+          <img src="images/testimonial-author.png" alt="testimonial-image" />
+      </section>
+
+      <section id="contact-section">
+        <div class="heading-container">
+            <div class="separator"></div>
+            <h1>Contact Me</h1>
+            <div class="separator"></div>
+        </div>
+
+        <div class="contact-content">
+          <div class="contact-container">
+            <div class="icon-desc-container">
+              <i class="fas fa-envelope"></i>
+              <p>ivandan@email.com</p>
+            </div>
+            <div class="icon-desc-container">
+              <i class="fas fa-phone-alt"></i>
+              <p>(201) 555-0124</p>
+            </div>
+          </div>
+
+          <div class="contact-container">
+            <div class="icon-desc-container">
+              <i class="fas fa-map-marker-alt"></i>
+              <p>Toledo, United States</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <div class="social-container">
+        <div class="separator"></div>
+        <div class="contact-social-icons-bar">
+          <div class="social-icons">
+            <a href="https://facebook.com" target="_blank" class="social-icon">
+              <i class="fab fa-facebook-f"></i>
+            </a>
+            <a href="https://twitter.com" target="_blank" class="social-icon">
+              <i class="fab fa-twitter"></i>
+            </a>
+            <a href="https://linkedin.com" target="_blank" class="social-icon">
+              <i class="fab fa-linkedin-in"></i>
+            </a>
+            <a href="https://whatsapp.com" target="_blank" class="social-icon">
+              <i class="fab fa-whatsapp"></i>
+            </a>
+          </div>
+        </div>
+        <div class="separator"></div>
+    </div>
+
+      <footer>
+        <div class="footer-content">
+          <p>&ldquo;Thanks for Scrolling&rdquo;</p>
+        </div>
+
+
+    </main>
+  </body>
+</html>
